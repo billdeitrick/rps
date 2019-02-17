@@ -1,0 +1,138 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background: #fff;
+    font-family: 'Permanent Marker', sans-serif;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.controls {
+    height: min-content;
+    width: 50rem;
+    margin-top: 16rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+header {
+    font-size: 5rem;
+    text-align: center;
+}
+
+header span {
+    padding-left: 4rem;
+}
+
+header span:first-of-type {
+    padding: 0;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-top: 0;
+}
+
+.weapons {
+    font-size: 6rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.weapons li:first-child {
+    padding: 0;
+}
+
+.weapons li {
+    padding-left: 4rem;
+    cursor: pointer;
+    transition: transform .3s;
+    display: inline-block;
+}
+
+.reset {
+    width: min-content;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.weapons li:hover, .reset:hover {
+    transform: scale(1.2);
+    transition: transform .3s; 
+}
+
+.weapons li:hover div, .reset:hover div {
+    top: -1.5rem;
+    color: rgba(0, 0, 0, 1);
+    transform: rotate(0);
+    transition: color .3s, top .3s, transform .3s;
+}
+
+.reset:hover div {
+    top: -.9rem;
+}
+
+.weapons div, .reset div {
+    font-size: 2rem;
+    position: relative;
+    top: -4rem;
+    color: rgba(0, 0, 0, 0);
+    transform: rotate(180deg);
+    transition: color .3s, top .3s, transform .3s;
+}
+
+.reset div {
+    font-size: 1.5rem;
+}
+
+.reset {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.controls h3:first-of-type {
+    margin-top: 0;
+}
+
+.scoreboard {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+}
+
+.scoreboard table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.scoreboard table th, .scoreboard table td {
+    padding: 0 .5rem 0 .5rem;
+}
+
+.scoreboard h1 {
+    margin-bottom: .5rem;
+    font-size: 3rem;
+    text-align: center;
+}
